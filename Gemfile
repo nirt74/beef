@@ -9,10 +9,10 @@ gem 'net-smtp', require: false
 gem 'json'
 
 gem 'eventmachine', '~> 1.2', '>= 1.2.7'
-gem 'thin', '~> 1.8'
-gem 'sinatra', '~> 3.0'
+gem 'thin', '~> 2.0', '>= 2.0.0'
+gem 'sinatra', '~> 3.1', '>= 3.1.0'
 gem 'rack', '~> 2.2'
-gem 'rack-protection', '~> 3.0.5'
+gem 'rack-protection', '~> 3.1.0'
 gem 'em-websocket', '~> 0.5.3' # WebSocket support
 gem 'uglifier', '~> 4.2'
 gem 'mime-types', '~> 3.4', '>= 3.4.1'
@@ -22,7 +22,7 @@ gem 'term-ansicolor', :require => 'term/ansicolor'
 gem 'rubyzip', '~> 2.3'
 gem 'espeak-ruby', '~> 1.1.0' # Text-to-Voice
 gem 'rake', '~> 13.0'
-gem 'otr-activerecord', '~> 2.1', '>= 2.1.2'
+gem 'otr-activerecord', '~> 2.2', '>= 2.2.0'
 gem 'sqlite3', '~> 1.6', '>= 1.6.1'
 gem 'rubocop', '~> 1.53.1', require: false
 
@@ -37,7 +37,7 @@ gem 'erubis', '~> 2.7'
 # Metasploit Integration extension
 group :ext_msf do
   gem 'msfrpc-client', '~> 1.1', '>= 1.1.2'
-  gem 'xmlrpc', '~> 0.3.2'
+  gem 'xmlrpc', '~> 0.3.3'
 end
 
 # Notifications extension
@@ -79,12 +79,12 @@ group :test do
     # selenium-webdriver 3.x is incompatible with Firefox version 48 and prior
     # gem 'selenium' # Requires old version of selenium which is no longer available
     gem 'geckodriver-helper', '~> 0.24.0'
-    gem 'selenium-webdriver', '~> 4.10'
+    gem 'selenium-webdriver', '~> 4.11', '>= 4.11.0'
 
     # nokogiri is needed by capybara which may require one of the below commands
     # sudo apt-get install libxslt-dev libxml2-dev
     # sudo port install libxml2 libxslt
-    gem 'capybara', '~> 3.39'
+    gem 'capybara', '~> 3.40', '>= 3.40.0'
 end
 
 source 'https://rubygems.org'

@@ -9,10 +9,10 @@ gem 'net-smtp', require: false
 gem 'json'
 
 gem 'eventmachine', '~> 1.2', '>= 1.2.7'
-gem 'thin', '~> 1.8'
-gem 'sinatra', '~> 3.0'
-gem 'rack', '~> 2.2'
-gem 'rack-protection', '~> 3.0.5'
+gem 'thin', '~> 2.0', '>= 2.0.0'
+gem 'sinatra', '~> 3.1', '>= 3.1.0'
+gem 'rack', '~> 2.2', '>= 2.2.19'
+gem 'rack-protection', '~> 3.1.0'
 gem 'em-websocket', '~> 0.5.3' # WebSocket support
 gem 'uglifier', '~> 4.2'
 gem 'mime-types', '~> 3.4', '>= 3.4.1'
@@ -24,7 +24,7 @@ gem 'espeak-ruby', '~> 1.1.0' # Text-to-Voice
 gem 'rake', '~> 13.0'
 gem 'otr-activerecord', '~> 2.1', '>= 2.1.2'
 gem 'sqlite3', '~> 1.6', '>= 1.6.1'
-gem 'rubocop', '~> 1.53.1', require: false
+gem 'rubocop', '~> 1.66.0', require: false
 
 # Geolocation support
 group :geoip do
@@ -84,7 +84,7 @@ group :test do
     # nokogiri is needed by capybara which may require one of the below commands
     # sudo apt-get install libxslt-dev libxml2-dev
     # sudo port install libxml2 libxslt
-    gem 'capybara', '~> 3.39'
+    gem 'capybara', '~> 3.40', '>= 3.40.0'
 end
 
 source 'https://rubygems.org'
